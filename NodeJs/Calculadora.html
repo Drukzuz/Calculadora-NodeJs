@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://file.myfontastic.com/57AisLXDgw5pmHfSSxemZa/icons.css" rel="stylesheet">
+	<title>Calculadora</title>
+</head>
+<body>
+	<section class="Mesa">
+		<div class="fondo">
+			<div class="Caja">
+				<div class="Pantalla">
+					<input class="resultado" id="resultado" readonly=”readonly”></input>
+				</div>
+				<br>
+				<table class="Numeros">
+					<tr>
+						<td class="num" onclick="Delete()">C</td>
+						<td class="num" onclick="Signo('/')">÷</td>
+						<td class="num" onclick="Signo('*')">X</td>
+					</tr>
+					<tr>
+						<td class="num" onclick="Dig('7')">7</td>
+						<td class="num" onclick="Dig('8')">8</td>
+						<td class="num" onclick="Dig('9')">9</td>
+					</tr>
+					<tr>
+						<td class="num" onclick="Dig('4')">4</td>
+						<td class="num" onclick="Dig('5')">5</td>
+						<td class="num" onclick="Dig('6')">6</td>
+					</tr>
+					<tr>
+						<td class="num" onclick="Dig('1')">1</td>
+						<td class="num" onclick="Dig('2')">2</td>
+						<td class="num" onclick="Dig('3')">3</td>
+					</tr>
+					<tr>
+						<td class="num" onclick="Signo('%')">%</td>
+						<td class="num" onclick="Dig('0')">0</td>
+						<td class="num">,</td>
+					</tr>
+				</table>
+				<table class="Procesos">
+					<tr>
+						<td class="Signo" onclick="Bac()"><span data-icon="a"></span></td>
+					</tr>
+					<tr>
+						<td class="Signo" onclick="Signo('-')">-</td>
+					</tr>
+					<tr>
+						<td class="Signo" onclick="Signo('+')">+</td>
+					</tr>
+					<tr>
+						<td class="Signo2" onclick="Proceso()">=</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="Calculadora.js"></script>
+</html>
